@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Contact Us - PT. SURYA TITIA MAKMUR</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+
+        }
+        
+        .column {
+            float: left;
+            width: 50%;
+            margin-top: 120px;
+            padding: 100px;
+        }
+        
+        .navbar {
+            font-size: 18px;
+            font-weight: bolder;
+        }
+        
+        top-partition {
+            margin-top: 1900px;
+        }
+
+        .mySlides {display: none}
+        
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        .title {
+            margin-bottom: -160px;
+        }        
+
+        .row-full {
+            width: 100vw;
+            position: relative;
+            margin-left: -50vw;
+            height: 100px;
+            margin-top: 100px;
+            margin-bottom: 135px;
+            left: 50%;
+        }
+
+        .t1 {
+            width: max-width;
+            position: center;
+            bottom: 10px;
+            right: 10px;
+            font-family: monospace;
+            background-color: rgba(255, 255, 255, 0.3);
+            color: black;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        h2 {
+            font-size: 85px;
+            font-weight: 900;
+            margin-top: 70px;
+            margin-left: 180px;
+        }
+        
+        i {
+            margin-left: 5px;
+        }
+        
+        p {
+            margin-left: 180px;
+            font-size: 16px;
+        }
+
+        .text-block {
+            width: max-width;
+            position: relative;
+            margin-left: 190px;
+            bottom: 10px;
+            right: 10px;
+            font-family: monospace;
+            background-color: rgba(255, 255, 255, 0.3);
+            color: black;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        
+        .title-text-block {
+            width: max-width;
+            height: 412px;
+            margin-top: -164px;
+            position: center;
+            bottom: 10px;
+            right: 10px;
+            font-family: monospace;
+            background-color: rgba(128, 128, 128, 0.3);
+            color: black;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        
+        .basic-information-1 {
+            height: 250px;
+            width: 100%;
+            background-color: rgba(128, 128, 128, 0.3);
+            color: black;
+            margin-left: 40px;
+            padding-left: 56px;
+            padding-right: 56px;
+        }
+        
+        .basic-information-2 {
+            height: 250px;
+            width: 100%;
+            background-color: rgba(128, 128, 128, 0.3);
+            color: black;
+            margin-left: -40px;
+            padding-left: 56px;
+            padding-right: 56px;
+        }
+        
+    
+        
+        .products-navbar-1 {
+            margin-left: 195px;
+        }
+
+        h4 {
+            font-size: 35px;
+            font-weight: 800;
+        }
+        
+        .h5 {
+            font-size: 50px;
+        }
+        
+        .main-body {
+           
+            margin-right: 170px;
+        }
+        
+        .add-downwards {
+            margin-top: 120px;
+        }
+        
+        .add-upwards-main-body {
+            margin-top: 10px;
+        }
+        
+        .add-upwards-box {
+            margin-top: 550px;
+        }
+        
+        .add-upwards-palette {
+            margin-top: 150px;
+        }
+        
+        .add-upwards-layer {
+            margin-top: 550px;
+        }
+        
+        .add-upwards-specialorder {
+            margin-top: 550px;
+        }
+                
+        .button {
+            padding: 1px 8px;
+            font-size: 22px;
+            margin-right: 20px;
+            border: 1px solid black;
+            background-color: transparent;
+            color: black;
+            cursor: pointer;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .tbody {
+            height: 50px !important;
+            overflow-y: scroll;
+        }
+
+        .my-tbody {
+            height:30px;
+            display:block;
+            overflow-y:scroll;
+            width:100%;
+        }
+
+        .tbody {
+            width: 100%;
+        }
+        
+        .info {
+            margin-top: -10px;
+        }
+
+        tr {
+            width: 100%;
+        }
+
+        td {
+            width: 33.33%; 
+        }
+
+        .information {
+            font-size: 25px;
+            padding-top: 12px;
+        }       
+        
+        .business-hour {
+            font-size: 25px;
+            padding-top: 22px;
+            padding-left: 67px;
+        }
+        
+        .map {
+            margin: 0 auto 0 auto;
+        }
+        
+        
+        .footer {
+            clear: both;
+            position: relative;
+            height: 200px;
+            margin-top: 200px;
+        }
+        
+        .navigation-bar {
+            width: 100%;  /* i'm assuming full width */
+            height: 90px; /* change it to desired width */
+            background-color: white; /* change to desired color */
+        }
+        
+        .logo {
+            display: inline-block;
+            vertical-align: top;
+            width: 200px;
+            height: 60px;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-top: 14px;    /* if you want it vertically middle of the navbar. */
+        }
+        
+        .navigation-bar > a {
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 20px;
+            height: 80px;        /* if you want it to take the full height of the bar */
+            line-height: 70px;    /* if you want it vertically middle of the navbar */
+        }        
+        
+    </style>
+
+    <body>
+        <!-- Navbar -->
+        <nav class="navigation-bar">
+            <img class="logo" src="logo.jpg">
+            <a href="http://127.0.0.1:55115/index.html" class="navbar w3-middle w3-bar-item w3-button w3-padding-large">
+                <i class="fa fa-home"></i>
+                HOME
+            </a>
+            <a href="http://127.0.0.1:55115/our%20products.html" class="navbar w3-bar-item w3-button w3-padding-large w3-hide-small">
+                <i class="fa fa-cube"></i>
+                OUR PRODUCTS
+            </a>
+            <a href="http://127.0.0.1:55115/about%20us.html" class="navbar w3-bar-item w3-button w3-padding-large w3-hide-small">
+                <i class="fa fa-user-o"></i>
+                ABOUT US
+            </a>
+            <a href="http://127.0.0.1:55115/contact%20us.html" class="navbar w3-bar-item w3-button w3-padding-large w3-hide-small">
+                <i class="fa fa-phone"></i>
+                CONTACT US
+            </a>
+        </nav>
+
+        <!-- Main -->        
+        <div class="w3-padding-64" style="width: 750px; margin: 0 auto;">
+            <div class="row-full">
+                <div class="title-text-block w3-padding-48">
+                    <h2 class="w3-wide">CONTACT US</h2>
+                    <p class="w3-opacity"><i>Let us know of any inquiries or if you want to place an order.</i></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="column">
+                <div class="basic-information-1 w3-padding-48">
+                    <div class="info">
+                        <i class="information fa fa-phone" style="width:40px"></i><i class="information" style="font-size: 25px;"><b>Phone:</b> 897-3418</i><br>
+                        <i class="information fa fa-envelope" style="width:40px"></i><i class="information" style="font-size: 25px;"><b>Email: </b> stitiam.o@dnet.net.id</i><br>
+                        <i class="information fa fa-map-marker" style="width:40px"></i><i class="information" style="font-size: 25px;"><b>Address:</b> Jl. Angsana III Block AE - 50, Delta Silicon I, Lippo Cikarang, 17550</i><br>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="basic-information-2 w3-padding-48">
+                    <i class="business-hour fa fa-clock-o" style="width:40px"></i><i class="business-hour" style="font-size: 25px; margin-left: -40px;"><b>Business Hours:</b></i><br>
+                    <i class="business-hour" style="font-size: 25px;">Monday to Friday: 8am - 5pm</i><br>
+                    <i class="business-hour" style="font-size: 25px;">Weekends: Closed</i><br>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="main-body w3-padding-64" style="width: 750px; margin: 0 auto;">
+            <div class="w3-row w3-padding-48">
+                <div class="add-upwards-main-body w3-container w3-content w3-large">    
+                    <div class="w3-container w3-content w3-center w3-large w3-padding-16" style="margin-top: -150px">
+                        <i style="font-size: 40px;"><b>Find us on the map!</b></i><br>
+                    </div>
+                    <div class="map">
+           
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.555011975224!2d107.12471831476958!3d-6.322027995424697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e699af2e2efedb7%3A0x38cf5dfe13af5677!2sPT.%20SuryaTITIA%20Makmur!5e0!3m2!1sid!2sid!4v1572328624915!5m2!1sid!2sid" width="1200" height="750" style="margin-left: -242px;" frameborder="0"></iframe>
+                       
+                    </div>
+                </div>
+                
+            
+                <div class="w3-container w3-content w3-center m6 w3-padding-64" style="max-width:650px">                  
+                    <div class="w3-container w3-content w3-center w3-large w3-padding-16">
+                        <i style="font-size: 40px"><b>Submit your inquiries here</b></i><br> 
+                    </div>
+
+                    <form action="/action_page.php" target="_blank">
+                        <div>
+                            <div class="w3-row-padding" style="margin:0 -7px 10px -9px">
+                                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                            </div>
+                        </div>
+                        <div class="w3-row-padding" style="margin:0 -16px 10px -16px">
+                            <div class="w3-half">
+                                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                            </div>
+                            <div class="w3-half">
+                                <input class="w3-input w3-border" type="text" placeholder="Phone Number" required name="Phone Number">
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="w3-row-padding" style="margin:0 -7px 10px -9px">
+                                <input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="w3-row-padding" style="margin:0 -7px 0px -9px">
+                                <input class="w3-input w3-border" type="text" placeholder="Message us here!" required name="Place your order or message us here!">
+                            </div>
+                        </div>
+
+                        <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+        <a class="fa fa-facebook-official w3-hover-opacity" href="https://www.facebook.com/" target="_blank" ></a>
+        <a class="fa fa-instagram w3-hover-opacity" href="https://www.instagram.com" target="_blank"></a>
+        <a class="fa fa-linkedin w3-hover-opacity" href="https://www.linkedin.com/" target="_blank"></a>
+        </footer>
+        
+    </body>
+
+</html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Our Products - PT. SURYA TITIA MAKMUR</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-size: cover;
+            font-family: "Lato", sans-serif;
+        }
+        
+        .column {
+            margin-left: 0px;
+        }
+        
+        .navbar {
+            font-size: 18px;
+            font-weight: bolder;
+        }
+        
+        top-partition {
+            margin-top: 1900px;
+        }
+
+        .mySlides {display: none}
+        
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        .title {
+            margin-bottom: -160px;
+        }        
+
+        .row-full {
+            width: 100vw;
+            position: relative;
+            margin-left: -50vw;
+            height: 100px;
+            margin-top: 100px;
+            margin-bottom: 135px;
+            left: 50%;
+        }
+
+        .t1 {
+            width: max-width;
+            position: center;
+            bottom: 10px;
+            right: 10px;
+            font-family: monospace;
+            background-color: rgba(255, 255, 255, 0.3);
+            color: black;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        h2 {
+            font-size: 85px;
+            font-weight: 900;
+            margin-top: 50px;
+            margin-left: 180px;
+        }
+        
+        p {
+            margin-left: 180px;
+            font-size: 16px;
+        }
+
+        .text-block {
+            width: max-width;
+            position: relative;
+            margin-left: 190px;
+            bottom: 10px;
+            right: 10px;
+            font-family: monospace;
+            background-color: rgba(255, 255, 255, 0.3);
+            color: black;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        
+        .title-text-block {
+            width: max-width;
+            height: 412px;
+            margin-top: -164px;
+            position: center;
+            bottom: 10px;
+            right: 10px;
+            font-family: monospace;
+            background-color: rgba(128, 128, 128, 0.3);
+            color: black;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        
+        .products-navbar-1 {
+            margin-left: 195px;
+        }
+
+        h4 {
+            font-size: 35px;
+            font-weight: 800;
+        }
+        
+        .add-downwards {
+            margin-top: 120px;
+        }
+        
+        .add-upwards-box {
+            margin-top: 550px;
+        }
+        
+        .add-upwards-palette {
+            margin-top: 150px;
+        }
+        
+        .add-upwards-layer {
+            margin-top: 550px;
+        }
+        
+        .add-upwards-specialorder {
+            margin-top: 550px;
+        }
+                
+        .button {
+            padding: 1px 8px;
+            font-size: 22px;
+            margin-right: 20px;
+            border: 1px solid black;
+            background-color: transparent;
+            color: black;
+            cursor: pointer;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .tbody {
+            height: 50px !important;
+            overflow-y: scroll;
+        }
+
+        .my-tbody {
+            height:30px;
+            display:block;
+            overflow-y:scroll;
+            width:100%;
+        }
+
+        .tbody {
+            width: 100%;
+        }
+
+        tr {
+            width: 100%;
+        }
+
+        td {
+            width: 33.33%; 
+        }
+
+        .form-group {
+
+        }       
+        
+        .footer {
+            clear: both;
+            position: relative;
+            height: 200px;
+            margin-top: 200px;
+        }
+        
+        .navigation-bar {
+            width: 100%;  /* i'm assuming full width */
+            height: 90px; /* change it to desired width */
+            background-color: white; /* change to desired color */
+        }
+        
+        .logo {
+            display: inline-block;
+            vertical-align: top;
+            width: 200px;
+            height: 60px;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-top: 14px;    /* if you want it vertically middle of the navbar. */
+        }
+        
+        .navigation-bar > a {
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 20px;
+            height: 80px;        /* if you want it to take the full height of the bar */
+            line-height: 70px;    /* if you want it vertically middle of the navbar */
+        }
+
+    </style>
+
+    <body>
+        
+        <nav class="navigation-bar">
+            <img class="logo" src="logo.jpg">
+            <a href="http://127.0.0.1:55115/index.html" class="navbar w3-middle w3-bar-item w3-button w3-padding-large">
+                <i class="fa fa-home"></i>
+                HOME
+            </a>
+            <a href="http://127.0.0.1:55115/our%20products.html" class="navbar w3-bar-item w3-button w3-padding-large w3-hide-small">
+                <i class="fa fa-cube"></i>
+                OUR PRODUCTS
+            </a>
+            <a href="http://127.0.0.1:55115/about%20us.html" class="navbar w3-bar-item w3-button w3-padding-large w3-hide-small">
+                <i class="fa fa-user-o"></i>
+                ABOUT US
+            </a>
+            <a href="http://127.0.0.1:55115/contact%20us.html" class="navbar w3-bar-item w3-button w3-padding-large w3-hide-small">
+                <i class="fa fa-phone"></i>
+                CONTACT US
+            </a>
+        </nav>
+        
+        <div class="w3-padding-64" style="width: 750px; margin: 0 auto;">
+            <div class="row-full">
+                <div class="title-text-block w3-padding-48">
+                    <h2 class="w3-wide">OUR PRODUCTS</h2>
+                    <p class="w3-opacity"><i>Our company provides a wide range of products. From simple square boxes to complex designs, our products have always been top notch quality.</i></p>
+                    <div class="products-navbar-1">
+                        <div class="row">               
+                            <a class="button" href="#partition">PARTITION</a>                        
+                            <a class="button" href="#box">BOX</a>                                   
+                            <a class="button" href="#palette">PALETTE</a>                         
+                            <a class="button" href="#layer">LAYER</a>
+                            <a class="button" href="#specialorder">SPECIAL ORDER</a>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+        <div class="container w3-padding-64" style="width: 750px; margin: 0 auto;">
+            <div class="add-downwards row-full">
+                <div id="partition" class="text-block w3-padding-48">
+                    <h4>Partition</h4>
+                    <div class="row">
+                        <div class="column w3-container w3-content w3-padding-48"> 
+                            <img src="Partition1.JPG" width="450" height="320">
+                        </div>
+                        <div class="column w3-container w3-content w3-padding-48">
+                            <img src="Partition2.JPG" width="450" height="320">
+                        </div>
+                        <div class="column w3-container w3-content w3-padding-48">
+                            <img src="Partition3.JPG" width="450" height="320">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>      
+
+        <div class="container w3-padding-64" style="width: 750px; margin: 0 auto;">
+            <div class="add-upwards-box row-full">
+                <div id="box" class="text-block w3-padding-48">
+                    <h4>Box</h4>
+                    <div class="row">
+                        <div class="column w3-container w3-content w3-padding-48">
+                            <img src="Box1.JPG" width="450" height="320">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container w3-padding-64" style="width: 750px; margin: 0 auto;">
+            <div class="add-upwards-palette row-full">
+                <div id="palette"class="text-block w3-padding-48">
+                    <h4>Palette</h4>
+                    <div class="row">
+                        <div class="column w3-container w3-content w3-padding-48">
+                            <img src="Palette1.jpg" width="450" height="320">
+                        </div>
+                        <div class="column w3-container w3-content w3-padding-48">
+                            <img src="Palette2.jpg" width="450" height="320">
+                        </div>
+                        <div class="column w3-container w3-content w3-padding-48">
+                            <img src="Palette3.jpg" width="450" height="320">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container w3-padding-64" style="width: 750px; margin: 0 auto;">
+            <div class="add-upwards-layer row-full">
+                <div id="layer" class="text-block w3-padding-48">
+                    <h4>Layer</h4>
+                    <div class="row">
+                        <div class="column w3-container w3-content w3-padding-48">
+                            <img id="snapshot" src="ronaldo.jpg" width="300" height="200">
+                            <p> Recently updated</p>
+                        </div>
+                        <div class="column w3-container w3-content w3-padding-48">
+                            <img id="photo2 "src="ronaldo.jpg" width="300" height="200">
+                            <p> Last intruder alert </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container w3-padding-64" style="width: 750px; margin: 0 auto;">
+            <div class="row-full">
+                <div id="specialorder" class="text-block w3-padding-48">
+                    <h4>Special Order</h4>
+                    <div class="row">
+                        <div class="column w3-container w3-content w3-padding-48">
+                            <img id="snapshot" src="ronaldo.jpg" width="300" height="200">
+                            <p> Recently updated</p>
+                        </div>
+                        <div class="column w3-container w3-content w3-padding-48">
+                            <img id="photo2 "src="ronaldo.jpg" width="300" height="200">
+                            <p><center>Last intruder alert</center></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+            <a class="fa fa-facebook-official w3-hover-opacity" href="https://www.facebook.com/" target="_blank" ></a>
+            <a class="fa fa-instagram w3-hover-opacity" href="https://www.instagram.com" target="_blank"></a>
+            <a class="fa fa-linkedin w3-hover-opacity" href="https://www.linkedin.com/" target="_blank"></a>
+        </footer> 
+
+    </body>
+    
+</html>
+    
+
+    
